@@ -10,7 +10,7 @@ So I'm using Quicksilver to trigger it so you need to make sure the AppleScript 
 
 ## AppleScript ##
 
-I found that I needed to create a little AppleScript which Quicksilver then call. This was because I wanted to pass the content I'd found back into Quicksilver's large text input which I don't think I could have done by simply calling the PHP script directly.
+I found that I needed to create a little AppleScript which Quicksilver can then call. This was because I wanted to pass the content I'd found back into Quicksilver's large text input which I don't think I could have done by simply calling the PHP script directly.
 
 ```
 tell application "Quicksilver"

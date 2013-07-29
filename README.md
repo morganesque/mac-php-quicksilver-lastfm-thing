@@ -3,7 +3,7 @@ A Mac PHP Quicksilver Last.fm thing
 
 I made this because I have Spotify on the living room laptop playing me music but I sit working in the dinning room (on the big table) and sometimes I just wonder what the current song is. Obviously I don't want to get up and walk over. Christ! I don't even walk to reach for the mouse.
 
-So, because I scrobble the Spotify up to Last.fm (which generally is pretty quick) I realised that I could just ask Last.fm to tell me what it is. This was simpler than attempting to get into some Spotify API (is there one?) and because the Last.fm api is public (at least for this info) it was simple to grab it.
+So, because I scrobble the Spotify up to Last.fm (which generally is pretty quick) I realised that I could just ask Last.fm to tell me what it is. This was simpler than attempting to get into some Spotify API (is there one?) and because the Last.fm API is public (at least for this info) it was simple to grab it.
 
 ## Quicksilver ##
 So I'm using Quicksilver to trigger it so you need to make sure the AppleScript you create is something Quicksilver can find. You can do this directly in the Quicksilver prefs, or just stick the AppleScript in a folder Quicksilver is already scanning.

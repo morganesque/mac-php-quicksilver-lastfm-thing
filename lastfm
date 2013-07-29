@@ -1,0 +1,34 @@
+#!/usr/bin/php
+<?php
+$username = 'ghijklmno';
+$api_key  = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+
+$url = 'http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user='.$username.'&api_key='.$api_key.'&format=json';
+$file = json_decode(join('',file($url)));
+
+$a = $file->recenttracks->track[0]->artist;
+
+foreach($a as $k=>$v)
+{
+    if ($k == '#text') 
+    {
+        $artist = $a->$k;
+        break;
+    }
+}
+
+$song = $file->recenttracks->track[0]->name;
+
+$a = $file->recenttracks->track[0]->album;
+
+foreach($a as $k=>$v)
+{
+    if ($k == '#text') 
+    {
+        $album = $a->$k;
+        break;
+    }
+}
+
+echo $song.' - '.$artist.' ('.$album.')';
+?>
